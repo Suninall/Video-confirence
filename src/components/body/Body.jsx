@@ -125,7 +125,6 @@ const Body = ({id}) => {
       peerConnection.current = new RTCPeerConnection({
         iceServers: [{ urls: "stun:stun.l.google.com:19302" }],
       });
-      // 🎯 Обязательно пересоздаём обработчики (onicecandidate, ontrack и т.п.)
       setupPeerConnectionHandlers();
     }
   
